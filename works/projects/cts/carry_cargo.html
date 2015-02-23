@@ -1,0 +1,37 @@
+<?php 
+  session_start();
+	if(!$_SESSION['auth']==true)
+	{
+		header("Location: Login_Page.php"); //if regualar tries to use, kciks to signin page
+	}
+ ?>
+
+<html>
+<body>
+
+<form action="carry_cargo.php" method="post">
+
+Find flight to carry cargo from  
+
+<select name = "origin">
+  <option value="NWK">NWK</option>
+  <option value="JFK">JFK</option>
+  <option value="LGA">LGA</option>
+</select>
+
+to
+
+<select name = "destination">
+  <option value="NWK">NWK</option>
+  <option value="JFK">JFK</option>
+  <option value="LGA">LGA</option>
+</select>
+
+<input type="submit">
+
+</form>
+
+
+
+</body>
+</html> 

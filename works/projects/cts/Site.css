@@ -1,0 +1,62 @@
+/* 
+color scheme
+http://www.colorcombos.com/color-schemes/467/ColorCombo467.html
+*/
+
+body
+{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+background-color: #ffffff; /*bg of page*/ 
+color: #47423f; /* body text color*/
+
+background-image: url('z_airplane.png');
+background-repeat: no-repeat;
+background-position: 50% 150%;
+background-attachment: fixed;
+}
+
+#main
+{
+padding: 5px 30px 30px 30px;
+background-color: rgb(179, 177, 178); /* just in case opacity doesn't work */
+background-color: rgba(179, 177, 178, 0.95); /* bg of body text rgba(179, 177, 178, 0.89)*/
+border-radius: 0px 0px 0px 0px; /* roundness of body corners*/
+border-style: solid;
+border-color: #47423f;
+}
+
+h1
+{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+color: #3d3242;
+border-bottom: 3px solid #3d3242; /*line color*/
+}
+
+ul#menu
+{
+position: relative;
+/*margin: 1;*/
+padding: 0;
+}
+
+ul#menu li
+{
+display: inline;
+}
+
+ul#menu li a 
+{
+background-color: #b3b1b2; /*bg of buttons*/
+padding: 10px 20px;
+text-decoration: none;
+line-height: 0px; /* 2.8em*/
+color: #3d3242;
+border-radius: 0px 0px 0 0; /* 4 4 0 0 roundness of buttons*/
+border-style: solid;
+border-color: #47423f;
+}
+
+ul#menu li a:hover
+{
+background-color: #b95835; /*bg of buttons when hovered*/
+}

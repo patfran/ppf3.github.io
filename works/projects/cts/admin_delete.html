@@ -1,0 +1,32 @@
+<?php 
+  session_start();
+	if(!$_SESSION['auth']==true)
+	{
+		header("Location: Login_Page.php"); //if regualar tries to use, kciks to signin page
+	}
+ ?>
+
+<html>
+<body>
+
+<form action="admin_delete.php" method="post">
+
+Select value to remove:
+!Referential Integrity Enforced
+
+<select name = "category">
+  <option value="Flight - FlightNumber">FlightNumber</option>
+  <option value="Cargo - SkidID">SkidID</option>
+  <option value="Aircrew - CrewID">CrewID</option>
+  <option value="Aircraft - TailNumber">TailNumber</option>
+</select>
+
+<input type="text" name="delete">
+<input type="submit">
+
+</form>
+
+
+
+</body>
+</html> 
